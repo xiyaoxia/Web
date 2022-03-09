@@ -1,0 +1,39 @@
+<html lang="zh_CN">表示中文，"en"表示英文
+
+<br>换行 <hr>水平线
+
+弹出框和按钮：
+<button type="button" onclick="alert('我是弹出框')">我是按钮</button>
+
+<h1 align="right">右对齐
+
+超链接：<a href="http://www.baidu.com" target="_self">跳转百度</a>  href属性设置连接地址，a标签是超链接,target设置跳转页面（_self当前，_blank打开新页面进行跳转）
+
+<ul>无序列表<li>列表里的每一项
+
+img:
+<img src="路径" width="200" height="260" border="20">
+
+表格：
+<table boder="1" width..height..>表格标签 <tr>行标签<th>表头<th>单元格标签
+
+表单（收集信息）：
+<form>
+    user:<input type="text" value="我是默认值"><br>
+    密码:<input type="password"><br>
+    sex:<input type="radio" name="sex">男<input type="radio" name="sex">女<br>
+    复选框:<input type="checkbox">java<input type="checkbox">c<br>
+    下拉框:<select>
+        <option>1</option>
+        <option>2</option>
+    </select><br>
+    文本框:<textarea rows="10" cols="10">我是默认值</textarea>
+</form>
+表单格式化（整齐表格化）
+<table>
+        <tr>
+            <td>user:</td>
+            <td><input type="text" value="我是默认值"></td>
+        </tr>
+        
+div标签默认占一行；span包裹设置样式；p段落标签（上下各空出1行）
