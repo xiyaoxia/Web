@@ -38,4 +38,30 @@ img:
         
 div标签默认占一行；span包裹设置样式；p段落标签（上下各空出1行）
 
-CSS:
+
+
+CSS（选择器{属性：值；}）
+与html结合方式：
+1.标签的style属性设置“属性：值”：<div style="border: 1px solid red">no.2</div>
+2.选择器：head标签下设置<style type="text/css"> 选择器...
+
+标签选择器： 标签{属性：值} div{color:red;}
+
+id选择器：#id{属性：值} :
+#id001{
+            color: burlywood;
+        }
+....
+<div id="id001">no.1</div>
+
+类选择器：
+.class{....}:
+.class01{
+            color: burlywood;
+        }
+...
+<div class="class01">no.1</div>
+
+组合选择器：
+
+
