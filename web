@@ -81,8 +81,18 @@ div{
 
 
 
-JavaScript
+JavaScript(弱类型）
 与html结合的方式：
 1.在head或body标签中使用script标签
+2.单独一个js文件，在html文件中利用src调用它：
+<script type="text/javascript" src="hellojs.js"></script>
+(注意：1个script标签只能使用1个功能，可使用多个script标签）
+
+变量：
+变量类型：number（数值型）,string,object（对象型）,boolean,function(函数类型)
+特殊值：undefined,null,NAN
+定义变量的格式：var 变量名；var 变量名=值
+
+
 
 
