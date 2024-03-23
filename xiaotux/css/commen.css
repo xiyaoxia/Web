@@ -1,0 +1,132 @@
+.wrapper{
+    margin: 0 auto;
+    width: 1240px;
+}
+
+/* 快截导航 */
+.shortcut{
+    height: 52px;
+    background-color: #333;
+}
+
+.shortcut ul{
+    display: flex;
+    justify-content: flex-end;
+    line-height: 52px;
+}
+
+.shortcut ul li a{
+    border-right:  1px solid #fff;
+    color: #fff;
+    font-size: 14px;
+    padding:0px 14px;
+}
+
+.shortcut ul li .phone{
+    border-right: 0px;
+    padding-left: 5px;
+}
+
+.shortcut ul li img{
+    width: 12px;
+    height: 17px;
+    background-image: url(../images/sprites.png);
+    background-position: -160px -69px;
+    margin-left: 14px;
+}
+
+.shortcut ul li a:hover
+{
+    color: #27ba9b;
+}
+
+/* 头部 */
+.header{
+    display: flex;
+    height: 88px;
+    margin-top: 22px;
+    margin-bottom: 22px;
+}
+
+.header .logo  a{
+    display: block;
+}
+
+.header .logo  a img{
+    width: 200px;
+    height: 88px;
+}
+
+.daohan{
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search{
+    display: flex;
+    border-bottom: 2px solid #e7e7e7;
+    align-items: center;
+}
+
+.search input{
+    font-size: 14px;
+    width: 172px;
+    height: 30px;
+    margin-left: 11px;
+}
+
+.search .icon{
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/sprites.png);
+    background-position: -78px -68px;
+}
+
+.cart{
+    position: relative;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.icon-icon01{
+    font-size: 30px;
+    
+}
+
+.cart i{
+    font-size: 14px;
+    position: absolute;
+    top:0px;
+    left: 20px;
+    line-height: 14px;
+    background-color: #e26237;
+	border-radius: 8px;
+    color: #fff;
+    padding: 0 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 底部 */
+.footer{
+    height: 580px;
+    background-color: #333;
+    margin-top: 40px;
+}
+
+.footer .service{
+    height: 178px;
+    border-bottom: 1px solid #e8e8e8;
+    color: #fff;
+}
+

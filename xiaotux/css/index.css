@@ -1,0 +1,235 @@
+/* banner区域 */
+.banner{
+    
+	background-color: #f5f5f5;
+}
+.banner .wrapper{
+    display: flex;
+    height: 500px;
+    background-image: url(../uploads/banner_1.png);
+}
+
+.banner .left ul{
+    width: 251px;
+    background-color: #000000;
+    opacity: 0.8;
+    
+}
+
+.banner .left li{
+    height: 50px;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+.banner .left li a {
+    display: flex;
+    color: #ffffff;
+    align-items: center;
+}
+
+.banner .left li a .biao{
+    font-size: 16px;
+    margin: auto 16px auto 36px;
+}
+
+.banner .left li a .content{
+    font-size: 14px;
+}
+
+.banner .left li img{
+    width: 7px;
+    height: 15px;
+    background-image: url(../images/sprites.png);
+    background-position: -39px -109px;
+    margin-left: 88px;
+}
+
+.banner .left li:hover{
+    background-color: #27ba9b;
+}
+
+.banner .right{
+    flex: 1;
+    position: relative;
+    
+}
+
+.banner .right span{
+    display: block;
+    width: 13px;
+    height: 23px;
+    background-image: url(../images/sprites.png);
+    background-position: 0px -70px;
+}
+
+.banner .right .zuo
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 45px;
+	height: 44px;
+	background-color: #000000;
+	opacity: 0.2;
+    border-radius: 50%;
+    cursor: pointer;
+
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    left: 9px;
+}
+
+.banner .right .you{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 45px;
+	height: 44px;
+	background-color: #000000;
+	opacity: 0.2;
+    border-radius: 50%;
+    cursor: pointer;
+
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    right: 9px;
+}
+
+.banner .right .mid{
+    position: absolute;
+    bottom: 31px;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.banner .mid ul{
+    display: flex;
+    
+    justify-content: space-between;
+    width: 110px;
+    height: 10px;
+}
+
+.banner .mid li{
+    cursor: pointer;
+
+    width: 9px;
+	height: 10px;
+	opacity: 0.43;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+.banner .mid li:hover{
+    opacity: 1;
+}
+
+
+/* 热门品牌 */
+.hotbrand .wrapper{
+    
+    display: flex;
+    flex-direction: column;
+    height: 714px;
+}
+
+
+.hotbrand .head{
+    margin-top: 42px;
+    margin-bottom: 34px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.hotbrand .head h3{
+    font-size: 29px;
+    font-weight: 400;
+    margin-right: 35px;
+}
+
+
+.hotbrand .head span{
+    font-size: 16px;
+    color: #999999;
+    padding-bottom: 3px;
+}
+
+.hotbrand .bd{
+    flex: 1;
+    display: flex;
+    
+}
+
+.hotbrand .bd .left{
+    width: 240px;
+}
+
+.hotbrand .bd .left img{
+    height: 594px;
+}
+
+.hotbrand .bd .right ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.hotbrand .bd .right li{
+    width: 207px;
+    height: 297px;
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+.hotbrand .bd .right li img{
+    width: 184px;
+    height: 184px;
+}
+
+.hotbrand .bd .right li:hover{
+    border:1px solid #27ba9b;
+}
+
+.hotbrand .bd .right li:hover .cover{
+    bottom: 0;
+}
+
+.cover{
+
+    bottom: -84px;
+    transition: all 0.5s;
+
+    text-align: center;
+    width: 205px;
+    height: 84px;
+    background-color: #27ba9b;
+    position: absolute;
+    color: #ffffff;
+}
+
+.cover p:nth-child(2){
+    width: 125px;
+	border-bottom:2px solid #a9dbcc;
+    margin: 0 auto;
+}
+
+.cover p:nth-child(1){
+    margin-top: 19px;
+    margin-bottom: 7px;
+}
+
+.cover p:nth-child(3){
+    margin-top: 8px;
+    font-size: 13px;
+}
+
+
+
+
