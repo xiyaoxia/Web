@@ -1,0 +1,147 @@
+//out: ../css/
+
+//导航
+.navbar{
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.navbar-collapse{
+    flex: 0 !important;
+    .navbar-nav{
+        .nav-item{
+            .nav-link{
+                white-space:nowrap;
+                
+            }
+        }
+    }
+}
+
+.nav-link{
+    // color: #fff;
+    color: hsla(0, 0%, 100%, .65);
+}
+
+.container{
+    .navbar-brand{
+        img{
+            width: 200px;
+            height: 39px;
+        }
+    }
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link{
+    color: #f2b535;
+}
+
+.nav-link:focus, .nav-link:hover{
+    color: #f2b535;
+}
+
+.navbar-nav{
+    float: left;
+}
+
+.body{
+    font-family: Microsoft YaHei, Arial, Helvetica, sans-serif;
+}
+
+
+
+//轮播图
+.carousel{
+    @media (max-width:768px){
+        .carousel-item{
+            height: 250px;
+        }
+    }
+    @media (min-width:768px){
+        .carousel-item{
+            height: 400px;
+        }
+    }
+    @media (min-width:992px){
+        .carousel-item{
+            height: 500px;
+        }
+    }
+
+
+    .carousel-item{
+        //height: 500px;
+        background-size: cover;
+        background-position: center 0;
+        cursor: pointer;
+    }
+
+    .carousel-item:nth-child(1){
+        background-image: url(../assets/images/banner_0.jpg);
+    }
+    .carousel-item:nth-child(2){
+        background-image: url(../assets/images/banner_1.jpg);
+    }
+    .carousel-item:nth-child(3){
+        background-image: url(../assets/images/banner_2.jpg);
+    }
+    .carousel-item:nth-child(4){
+        background-image: url(../assets/images/banner_3.png);
+    }
+
+}
+
+//开源项目
+.project{
+    margin-top: 60px;
+    text-align: center;
+
+    .content{
+
+        .row{
+            
+            div{
+                height: 200px;
+                cursor: pointer;
+                margin-bottom: 10px;
+
+                a {
+                    display: block;
+                    height: 200px;
+                    padding: 20px 10px;
+                    border-radius: 5px;
+
+                    h3{
+                        margin-top: 20px;
+                        margin-bottom: 10px;
+                        color: #fff;
+                    }
+        
+                    img{
+                        height: 60px;
+                        color: #fff;
+                    }
+        
+                    p{
+                        color: #fff;
+                    }
+                }
+
+                &:nth-child(1) a {
+                    background-color: #70c3ff;
+                }
+    
+                &:nth-child(2) a {
+                    background-color: #fd6a7f;
+                }
+                &:nth-child(3) a {
+                    background-color: #7f8ea0;
+                }
+                &:nth-child(4) a {
+                    background-color: #89d04f;
+                }
+
+            }
+            
+        }
+    }
+}

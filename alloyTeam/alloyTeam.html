@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta na>
+    <title>腾讯全端</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Bootstrap/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/index.css">
+
+
+</head>
+<body>
+    <!-- 导航 -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="./assets/images/logo.svg" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">首页</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">boke</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Github</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tweb Conf</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">SuperStar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Web前端导航</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">关于</a>
+            </li>
+
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <script>
+      const nav = document.querySelector('.navbar')
+      window.addEventListener('scroll',function(){
+        if(document.documentElement.scrollTop>0)
+        nav.style.setProperty('background-color', '#26282c', 'important')
+        else
+        nav.style.setProperty('background-color', 'rgba(0, 0, 0, 0)', 'important')
+      })
+    </script>
+
+    <!-- 轮播图 -->
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          
+        </div>
+        <div class="carousel-item">
+          
+        </div>
+        <div class="carousel-item">
+          
+        </div>
+        <div class="carousel-item">
+          
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- 定时器 -->
+    <script>
+      // const urlArr=[{url:'./assets/images/banner_0.jpg'},
+      // {url:'./assets/images/banner_1.jpg'},
+      // {url:'./assets/images/banner_2.jpg'},
+      // {url:'./assets/images/banner_3.png'}]
+
+      // const box = document.querySelector('.carousel .carousel-item img')
+      
+      function itv(){
+        let i = setInterval(function(){
+        // i++
+        // if(i>=urlArr.length) i=0
+        // box.src = urlArr[i].url
+        // document.querySelector(`.carousel-indicators .active`).classList.remove('active')
+        // document.querySelector(`.carousel-indicators button:nth-child(${i+1})`).classList.add('active')
+        document.querySelector('.carousel-control-next').click()
+      },1000)
+        return i
+      }
+      
+      let i = itv()
+
+
+      const lbt = document.querySelector('.carousel .carousel-inner')
+
+      lbt.addEventListener('mouseenter',function(){
+        clearInterval(i)
+        
+        // console.log(i*10);
+      })
+
+      lbt.addEventListener('mouseleave',function(){
+        clearInterval(i)
+        i = itv()
+        // console.log(i);
+      })
+
+    </script>
+
+
+
+    <!-- 开源项目 -->
+    <div class="project container">
+      <div class="title">
+        <h2>OpenSource /开源项目</h2>
+        <p>种类众多的开源项目，让你爱不释手</p>
+      </div>
+      <div class="content">
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <a href="">
+              <img src="./assets/images/omi.png" alt="">
+              <h3>OMI</h3>
+              <p>开放现代组件框架</p>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <a href="">
+            <img src="./assets/images/alloyimage.png" alt="">
+              <h3>OMI</h3>
+              <p>开放现代组件框架</p>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <a href="">
+            <img src="./assets/images/alloytouch.png" alt="">
+              <h3>OMI</h3>
+              <p>开放现代组件框架</p>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <a href="">
+            <img src="./assets/images/sodalogo.png" alt="">
+              <h3>OMI</h3>
+              <p>开放现代组件框架</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <script src="./Bootstrap/js/bootstrap.min.js"></script>
+
+  <!-- 我是空盒子 -->
+  <div style="height: 500px;"></div>
+  
+</body>
+</html>
